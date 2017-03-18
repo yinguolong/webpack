@@ -1,22 +1,14 @@
 import React from "react";
+import axios from "axios";
 
-class App extends React.Component{
-  constructor(){
-    super();
-    this.state = {
-      data:""
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                hello
+            </div>
+        )
     }
-  }
-   componentDidMount(){
-     this.setState({data:"yinguolong"})
-   }
-  render(){
-    return(
-      <div>
-        用户名 :
-        <p>{this.state.data}</p>
-      </div>
-    )
-  }
 }
+
 export default App;

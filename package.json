@@ -4,6 +4,7 @@
   "description": "1610班课程代码",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.15.3",
     "jquery": "^3.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -22,9 +23,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/webpack --watch",
+    "build": "webpack --watch",
     "long": "git add . && git commit -m aaa && git push",
-    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --port 3000"
+    "dev": "webpack-dev-server --config webpack.dev.config.js --port 3000"
   },
   "repository": {
     "type": "git",
